@@ -46,11 +46,11 @@
   <button id="allow">Allow</button><button id="deny">No thanks</button>
 </div>
 
-<!-- Píxel de Meta. Sustituir PIXEL_ID por el ID del conjunto de datos de Events Manager.
+<!-- Píxel de Meta. ID del conjunto de datos «Conectly web» (Events Manager, 2026-11-12).
      Solo se carga si la persona pulsa «Allow» (RGPD/TTDSG). El Lead se manda una sola vez por sesión. -->
 <script>
 (function () {
-  var PIXEL_ID = 'PIXEL_ID';
+  var PIXEL_ID = '1112880671531691';
   var q = new URLSearchParams(location.search);
   var source = (q.get('source') || '').replace(/[^a-z0-9_-]/gi, '').slice(0, 40);
   if (source) document.getElementById('questions').href = 'https://tally.so/r/RWMzep?source=' + encodeURIComponent(source);
